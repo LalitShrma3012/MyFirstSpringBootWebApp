@@ -1,5 +1,4 @@
-package com.TheLash.MySpringBootLearning;
-
+package com.TheLash.MySpringBootLearning.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -7,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HealthCheck {
 
-    @GetMapping("Hello")
-    public String sayHello(){
-        return "Hello SpringBoot";
+    @GetMapping("/health-Check")
+    public String healthCheck() {
+        return "Ok";
     }
 }
